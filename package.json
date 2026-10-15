@@ -1,0 +1,36 @@
+{
+  "name": "ad-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .next",
+    "dev": "npm run clean && next dev",
+    "build": "npm run clean && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "verify:dev": "node scripts/verify-dev-health.mjs",
+    "test": "tsx tests/rnp-parser.test.ts && tsx tests/rnp-aggregate.test.ts && tsx tests/rnp-project-sheet.test.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.383.0",
+    "next": "14.2.5",
+    "papaparse": "^5.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "tsx": "^4.23.12",
+    "typescript": "^5.5.4"
+  }
+}
